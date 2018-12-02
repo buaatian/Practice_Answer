@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/Chapter_5/5_1_view/5_1_view",
+    "pages/Chapter_5/5_2_scroll-view/5_2_scroll-view",
+    "pages/Chapter_5/5_3_swiper/5_3_swiper",
+    "pages/Chapter_5/5_4_movable-view/5_4_movable-view",
+    "pages/Chapter_5/5_5_cover-view/5_5_cover-view"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "演示",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

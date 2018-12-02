@@ -1,0 +1,61 @@
+<!--pages/Chapter_5/5_1_view/5_1_view.wxml-->
+<view class="container">
+  <view class="page-head">
+    <view class="page-head-title">view组件</view>
+    <view class="page-head-line"></view>
+  </view>
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-section-title">
+        <text>justify-content\n主轴对齐方式</text>
+      </view>
+      <view class="page-section-spacing">
+        <view class="flex-wrp" style="flex-direction:row;justify-content:flex-start;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+          <view class="flex-item demo-text-3"></view>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;justify-content:flex-end;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+          <view class="flex-item demo-text-3"></view>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;justify-content:space-between;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+          <view class="flex-item demo-text-3"></view>
+        </view>
+
+        <view class="flex-wrp" style="flex-direction:row;justify-content:space-around;">
+          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-2"></view>
+          <view class="flex-item demo-text-3"></view>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section">
+      <view class="page-section-title">
+        <text>align-item\n侧轴对齐方式</text>
+      </view>
+      <view class="flex-wrp-V" style="height:300rpx;flex-direction:row;justify-content:center;align-items:flex-start">
+        <view class="flex-item demo-text-1"></view>
+        <view class="flex-item demo-text-2"></view>
+        <view class="flex-item demo-text-3"></view>
+      </view>
+      <view class="flex-wrp-V" style="height:300rpx;flex-direction:row;justify-content:center;align-items:center">
+        <view class="flex-item demo-text-1"></view>
+        <view class="flex-item demo-text-2"></view>
+        <view class="flex-item demo-text-3"></view>
+      </view>
+      <view class="flex-wrp-V" style="height:300rpx;flex-direction:row;justify-content:center;align-items:flex-end">
+        <view class="flex-item demo-text-1"></view>
+        <view class="flex-item demo-text-2"></view>
+        <view class="flex-item demo-text-3"></view>
+      </view>
+    </view>
+  </view>
+
+</view>

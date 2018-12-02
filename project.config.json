@@ -1,0 +1,68 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wx62beed7ad9f36356",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%99%E6%9D%90%E4%B9%A6%E7%B1%8D%E7%BB%83%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": -1,
+					"name": "scroll-view",
+					"pathName": "pages/Chapter_5/5_2_scroll-view/5_2_scroll-view",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "swiper",
+					"pathName": "pages/Chapter_5/5_3_swiper/5_3_swiper",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "movable-view",
+					"pathName": "pages/Chapter_5/5_4_movable-view/5_4_movable-view",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "cover-view",
+					"pathName": "pages/Chapter_5/5_5_cover-view/5_5_cover-view"
+				}
+			]
+		}
+	}
+}
