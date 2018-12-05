@@ -5,9 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
-    indicatorDots: true,
-    vertical: false,
     autoplay: false,
     interval: 2000,
     duration: 500
@@ -72,27 +69,27 @@ Page({
     }
   },
 
-  changeIndicatorDots() {
+  startAutoPlay() {
     this.setData({
-      indicatorDots: !this.data.indicatorDots
+      autoplay: true
     })
   },
 
-  changeAutoplay() {
+  stopAutoPlay() {
     this.setData({
-      autoplay: !this.data.autoplay
+      autoplay: false
     })
   },
 
-  intervalChange(e) {
+  addInterval() {
     this.setData({
-      interval: e.detail.value
+      interval: this.data.interval+1000
     })
   },
 
-  durationChange(e) {
+  addDuration() {
     this.setData({
-      duration: e.detail.value
+      duration: this.data.duration+100
     })
   }
 })

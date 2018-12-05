@@ -7,43 +7,32 @@
 
   <view class="page-body">
     <view class="page-section page-section-spacing swiper">
-      <swiper indicator-dots="{{indicatorDots}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{background}}" wx:key="*this">
-          <swiper-item>
-            <view class="swiper-item {{item}}"></view>
-          </swiper-item>
-        </block>
+      <swiper indicator-dots="true" vertical="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <swiper-item>
+          <view class="swiper-item demo-text-1"></view>
+        </swiper-item>
+        <swiper-item>
+          <view class="swiper-item demo-text-2"></view>
+        </swiper-item>
+        <swiper-item>
+          <view class="swiper-item demo-text-3"></view>
+        </swiper-item>
       </swiper>
     </view>
-    <view class="page-section" style="margin-top: 40rpx;margin-bottom: 0;">
-      <view class="weui-cells weui-cells_after-title">
-        <view class="weui-cell weui-cell_switch">
-          <view class="weui-cell__bd">指示点</view>
-          <view class="weui-cell__ft">
-            <switch checked="{{indicatorDots}}" bindchange="changeIndicatorDots" />
-          </view>
-        </view>
-        <view class="weui-cell weui-cell_switch">
-          <view class="weui-cell__bd">自动播放</view>
-          <view class="weui-cell__ft">
-            <switch checked="{{autoplay}}" bindchange="changeAutoplay" />
-          </view>
-        </view>
-      </view>
-    </view>
 
-    <view class="page-section page-section-spacing">
-      <view class="page-section-title">
-        <text>幻灯片切换时长(ms)</text>
-        <text class="info">{{duration}}</text>
+    <view class="page-section">
+      <view class="btn-area">
+        <button bindtap="startAutoPlay" type="primary">打开自动播放</button>
       </view>
-      <slider bindchange="durationChange" value="{{duration}}" min="500" max="2000"/>
-      <view class="page-section-title">
-        <text>自动播放间隔时长(ms)</text>
-        <text class="info">{{interval}}</text>
+      <view class="btn-area">
+        <button bindtap="stopAutoPlay" type="primary">关闭自动播放</button>
       </view>
-      <slider bindchange="intervalChange" value="{{interval}}" min="2000" max="10000"/>
+      <view class="btn-area">
+        <button bindtap="addInterval" type="primary">增加自动切换时间间隔</button>
+      </view>
+      <view class="btn-area">
+        <button bindtap="addDuration" type="primary">增加滑动动画时长</button>
+      </view>
     </view>
   </view>
 
