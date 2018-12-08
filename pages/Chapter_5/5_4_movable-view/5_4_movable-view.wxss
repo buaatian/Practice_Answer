@@ -17,6 +17,11 @@ button{
   font-size: 32rpx;
   font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
 }
+.wrap{
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
 .page-head{
   padding: 60rpx 50rpx 80rpx;
   text-align: center;
@@ -50,7 +55,7 @@ button{
   padding-left: 30rpx;
   padding-right: 30rpx;
 }
-movable-view {
+movable-view{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,25 +65,25 @@ movable-view {
   color: #fff;  
 }
 
-movable-area {
-  height: 400rpx;
+movable-view.gradient.max{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 400rpx;
+  height: 150rpx;
+  background: radial-gradient(#f5641a, #1AAD19, #17a8e2);
+  color: #fff;  
+}
+
+movable-area {
+  height: 300rpx;
+  width: 300rpx;
   margin: 50rpx 0rpx 0 50rpx;
   background-color: #ccc;
   overflow: hidden;
 }
 
-.max {
-  width: 600rpx;
-  height: 600rpx;
-}
-
-.page-section {
-  width: 100%;
-  margin-bottom: 20rpx;
-}
-
-.page-section-title.first {
+.page-section-title.top {
   margin-top: 0;
 }
 

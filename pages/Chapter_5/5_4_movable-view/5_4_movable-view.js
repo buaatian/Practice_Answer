@@ -7,7 +7,7 @@ Page({
   data: {
     x: 0,
     y: 0,
-    scale: 2,
+    scale: 1,
   },
 
   /**
@@ -71,14 +71,7 @@ Page({
 
   tap() {
     this.setData({
-      x: 30,
-      y: 30
-    })
-  },
-
-  tap2() {
-    this.setData({
-      scale: 3
+      scale: 2
     })
   },
 
