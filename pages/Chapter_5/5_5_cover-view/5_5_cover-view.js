@@ -5,8 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    latitude: 23.099994,
-    longitude: 113.324520,
+    
   },
 
   /**
@@ -20,7 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.videoCtx = wx.createVideoContext('myVideo')
+
   },
 
   /**
@@ -62,18 +61,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return {
-      title: 'cover-view',
-      path: 'pages/Chapter_5/5_5_cover-view/5_5_cover-view'
-    }
-  },
-  play() {
-    this.videoCtx.play()
-  },
-  pause() {
-    this.videoCtx.pause()
-  },
-  stop() {
-    this.videoCtx.stop()
+    
   }
 })
