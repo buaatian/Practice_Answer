@@ -13,7 +13,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.1",
-	"appid": "wx62beed7ad9f36356",
+	"appid": "wx303c0447eae52ab8",
 	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%95%99%E6%9D%90%E4%B9%A6%E7%B1%8D%E7%BB%83%E4%B9%A0%E9%A2%98%E7%AD%94%E6%A1%88",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 5,
 			"list": [
 				{
 					"id": -1,
@@ -60,7 +60,19 @@
 				{
 					"id": -1,
 					"name": "cover-view",
-					"pathName": "pages/Chapter_5/5_5_cover-view/5_5_cover-view"
+					"pathName": "pages/Chapter_5/5_5_cover-view/5_5_cover-view",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Chapter_3_01",
+					"pathName": "pages/Chapter_3/exercise/01",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Chapter_3_02",
+					"pathName": "pages/Chapter_3/exercise_02/02"
 				}
 			]
 		}

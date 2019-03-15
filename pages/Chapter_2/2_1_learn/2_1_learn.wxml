@@ -1,0 +1,24 @@
+<!--pages/Chapter_2/2_1_learn/2_1_learn.wxml-->
+<text>
+  为了在页面底部显示用于切换首页和日志页的tab，在app.json中，新增tabBar属性，其内容如下：
+
+  "tabBar": {
+    "color":"#dddddd",
+    "selectedColor":"#00c208",
+    "backgroundColor": "#fefefe",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"pages/index/index.png",
+      "selectedIconPath":"pages/index/selectedIndex.png"
+    },{
+      "pagePath": "pages/logs/logs",
+      "text": "日志",
+      "iconPath": "pages/logs/logs.png",
+      "selectedIconPath": "pages/logs/selectedLogs.png"
+    }]
+  }
+
+  注意，图标可以去往 https://www.iconfont.cn/ 搜索下载。下载完成后命名好放置于pages/index和pages/logs目录下即可使用
+</text>

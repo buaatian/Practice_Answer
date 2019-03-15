@@ -1,5 +1,8 @@
 {
   "pages": [
+    "pages/Chapter_2/2_1_learn/2_1_learn",
+    "pages/Chapter_3/exercise_01/01",
+    "pages/Chapter_3/exercise_02/02",
     "pages/Chapter_5/5_1_view/5_1_view",
     "pages/Chapter_5/5_2_scroll-view/5_2_scroll-view",
     "pages/Chapter_5/5_3_swiper/5_3_swiper",
