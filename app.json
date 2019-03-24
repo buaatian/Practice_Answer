@@ -7,11 +7,14 @@
     "pages/Chapter_5/5_2_scroll-view/5_2_scroll-view",
     "pages/Chapter_5/5_3_swiper/5_3_swiper",
     "pages/Chapter_5/5_4_movable-view/5_4_movable-view",
-    "pages/Chapter_5/5_5_cover-view/5_5_cover-view"
+    "pages/Chapter_5/5_5_cover-view/5_5_cover-view",
+    "pages/Chapter_6/exercise_01/exercise_01",
+    "pages/Chapter_6/exercise_02/exercise_02",
+    "pages/Chapter_6/exercise_03/exercise_03"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "演示",
+    "navigationBarTitleText": "练习",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },

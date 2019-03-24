@@ -1,0 +1,22 @@
+<!--pages/Chapter_6/exercise_01/exercise_01.wxml-->
+<view class='container'>
+<view class='page-body'>
+<view class="group">
+  <block wx:for="{{iconSize}}">
+    <icon type="success" size="{{item}}" />
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="35" />
+  </block>
+</view>
+
+<view class="group">
+  <block wx:for="{{iconColor}}">
+    <icon type="success" size="35" color="{{item}}" />
+  </block>
+</view>
+</view>
+</view>

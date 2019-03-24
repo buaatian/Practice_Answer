@@ -1,0 +1,21 @@
+<!--pages/Chapter_6/exercise_02/exercise_02.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-section-title">不可复制的文本</view>
+      <view class="page-content">
+        <view class='text-box'>
+          <text selectable='true'>{{text}}</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="page-section">
+      <view class="page-section-title">渲染HTML代码</view>
+      <view class="page-content">
+        <rich-text nodes="{{htmlSnip}}"></rich-text>
+      </view>
+    </view>
+  </view>
+</view>
+

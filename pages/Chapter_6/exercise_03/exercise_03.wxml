@@ -1,0 +1,12 @@
+<!--pages/Chapter_6/exercise_03/exercise_03.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+
+      <view class="progress-box">
+        <progress percent="{{percent}}" show-info stroke-width="3"/>
+      </view>
+      <button type="primary" bindtap="addPercent">增加10%进度</button>
+    </view>
+  </view>
+</view>

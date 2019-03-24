@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 8,
 			"list": [
 				{
 					"id": -1,
@@ -72,7 +72,25 @@
 				{
 					"id": -1,
 					"name": "Chapter_3_02",
-					"pathName": "pages/Chapter_3/exercise_02/02"
+					"pathName": "pages/Chapter_3/exercise_02/02",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Chapter_6_01",
+					"pathName": "pages/Chapter_6/exercise_01/exercise_01",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Chapter_6_02",
+					"pathName": "pages/Chapter_6/exercise_02/exercise_02",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "Chapter_6_03",
+					"pathName": "pages/Chapter_6/exercise_03/exercise_03"
 				}
 			]
 		}
