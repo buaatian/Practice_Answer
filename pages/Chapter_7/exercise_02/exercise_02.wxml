@@ -1,0 +1,94 @@
+<!--pages/Chapter_7/exercise_02/exercise_02.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title">活动报名</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示：{{errorMessage}}</view>
+        <form bindsubmit='formSubmit' bindreset='formReset'>
+          <view class="weui-cells__title">姓名</view>
+          <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__bd">
+                      <input name="name" class="weui-input" placeholder="请输入姓名" />
+                  </view>
+              </view>
+          </view>
+
+          <view class="weui-cells__title">性别</view>
+          <view class="weui-cells weui-cells_after-title">
+              <radio-group name="gender" bindchange="radioChange">
+                  <label class="weui-cell weui-check__label" wx:for="{{radioItems}}" wx:key="{{item.value}}">
+                      <radio class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+                      <view class="weui-cell__bd">{{item.name}}</view>
+                      <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                          <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                      </view>
+                  </label>
+              </radio-group>
+          </view>
+
+          <view class="weui-cells__title">年龄</view>
+          <slider name="age" value="25" bindchange="sliderChange" show-value/>
+
+          <view class="weui-cells__title">想要参加的活动</view>
+          <view class="weui-cells weui-cells_after-title">
+              <checkbox-group name="activities" bindchange="checkboxChange">
+                  <label class="weui-cell weui-check__label" wx:for="{{checkboxItems}}" wx:key="{{item.value}}">
+                      <checkbox class="weui-check" value="{{item.value}}" checked="{{item.checked}}"/>
+
+                      <view class="weui-cell__hd weui-check__hd_in-checkbox">
+                          <icon class="weui-icon-checkbox_circle" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                          <icon class="weui-icon-checkbox_success" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                      </view>
+                      <view class="weui-cell__bd">{{item.name}}</view>
+                  </label>
+              </checkbox-group>
+          </view>
+
+          <view class="weui-cells__title">联系方式</view>
+            <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell weui-cell_select">
+                  <view class="weui-cell__hd" style="width: 105px">
+                      <picker name="accountType" bindchange="bindCountryCodeChange" value="{{accountIndex}}" range="{{accounts}}">
+                          <view class="weui-select">{{accounts[accountIndex]}}</view>
+                      </picker>
+                  </view>
+                  <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                      <input name="accountDetail" class="weui-input" placeholder="请输入详细联系方式" />
+                  </view>
+              </view>
+          </view>
+          <view class="weui-cells__tips">选择一种填写即可</view>
+
+          <view class="weui-cells__title">其它需要说明的事项</view>
+          <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell">
+                  <view class="weui-cell__bd">
+                      <textarea name="otherInfo" class="weui-textarea" placeholder="请输入其它需要说明的事项" auto-height='true' bindinput='countCharacters' maxlength='200'/>
+                      <view class="weui-textarea-counter">{{characterNum}}/200</view>
+                  </view>
+              </view>
+          </view>
+
+          <checkbox-group name="agree" bindchange="bindAgreeChange">
+              <label class="weui-agree" for="weuiAgree">
+                  <view class="weui-agree__text">
+                      <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                      <view class="weui-agree__checkbox-icon">
+                          <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                      </view>
+                      阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                  </view>
+              </label>
+          </checkbox-group>
+
+          <view class="weui-btn-area">
+              <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+              <button class="weui-btn" type="default" form-type='reset'>重置表单</button>
+          </view>
+        </form>
+    </view>
+</view>
+
+

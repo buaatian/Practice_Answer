@@ -10,7 +10,9 @@
     "pages/Chapter_5/5_5_cover-view/5_5_cover-view",
     "pages/Chapter_6/exercise_01/exercise_01",
     "pages/Chapter_6/exercise_02/exercise_02",
-    "pages/Chapter_6/exercise_03/exercise_03"
+    "pages/Chapter_6/exercise_03/exercise_03",
+    "pages/Chapter_7/exercise_01/exercise_01",
+    "pages/Chapter_7/exercise_02/exercise_02"
   ],
   "window": {
     "navigationBarTextStyle": "black",

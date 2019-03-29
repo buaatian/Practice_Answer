@@ -1,0 +1,123 @@
+<!--pages/Chapter_7/exercise_01/exercise_01.wxml-->
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title">新建活动</view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-toptips weui-toptips_warn" wx:if="{{showTopTips}}">错误提示：{{errorMessage}}</view>
+        <form bindsubmit="formSubmit" bindreset='formReset'>
+          <view class="weui-cells__title">活动基本信息</view>
+          <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">活动名称</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                      <input name="activityName" class="weui-input" placeholder="请输入活动名称"/>
+                  </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">开始日期</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                      <picker name="startDate" mode="date" value="{{date}}" start="1900-01-01" end="2100-12-31" bindchange="bindDateChange">
+                          <view class="weui-input">{{date}}</view>
+                      </picker>
+                  </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">开始时间</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                      <picker name="startTime" mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                          <view class="weui-input">{{time}}</view>
+                      </picker>
+                  </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">活动地点</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                      <picker name="activityPlace" mode="region" bindchange="bindRegionChange" value='{{region}}'>
+                          <view class="weui-input">{{region}}</view>
+                      </picker>
+                  </view>
+              </view>
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">详细地址</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                      <input name="activityPlaceDetail" class="weui-input" placeholder="请继续输入详细的活动地址"/>
+                  </view>
+              </view>
+          </view>
+
+          <view class="weui-cells__title">费用信息</view>
+          <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell weui-cell_switch">
+                  <view class="weui-cell__bd">是否收费</view>
+                  <view class="weui-cell__ft">
+                      <switch name="needFee" bindchange='changeFee' />
+                  </view>
+              </view>
+              <block wx:if="{{fee}}">
+              <view class="weui-cell weui-cell_input">
+                  <view class="weui-cell__hd">
+                      <view class="weui-label">费用</view>
+                  </view>
+                  <view class="weui-cell__bd">
+                      <input name="feeDetail" class="weui-input" type='digit' placeholder="请输入具体费用"/>
+                  </view>
+              </view>
+              </block>
+          </view>
+
+          <view class="weui-cells__title">其它信息</view>
+          <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell">
+                  <view class="weui-cell__bd">
+                      <textarea name="activityInfo" class="weui-textarea" placeholder="请输入活动简介" auto-height="true" bindinput='countCharacters' maxlength='200'/>
+                      <view class="weui-textarea-counter">{{characterNum}}/200</view>
+                  </view>
+              </view>
+          </view>
+
+          <view class="weui-cells__title">活动发起人联系方式</view>
+          <view class="weui-cells weui-cells_after-title">
+              <view class="weui-cell weui-cell_select">
+                  <view class="weui-cell__hd" style="width: 105px">
+                      <picker name="accountType" bindchange="bindAccountChange" value="{{accountIndex}}" range="{{accounts}}">
+                          <view class="weui-select">{{accounts[accountIndex]}}</view>
+                      </picker>
+                  </view>
+                  <view class="weui-cell__bd weui-cell__bd_in-select-before">
+                      <input name="accountDetail"  class="weui-input" placeholder="请输入联系方式" />
+                  </view>
+              </view>
+          </view>
+          <view class="weui-cells__tips">选择一种填写即可</view>
+
+          <checkbox-group name="agree" bindchange="bindAgreeChange">
+              <label class="weui-agree" for="weuiAgree">
+                  <view class="weui-agree__text">
+                      <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                      <view class="weui-agree__checkbox-icon">
+                          <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                      </view>
+                      阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                  </view>
+              </label>
+          </checkbox-group>
+
+          <view class="weui-btn-area">
+              <button class="weui-btn" type="primary" form-type='submit'>确定</button>
+              <button class="weui-btn" type="default" form-type='reset'>重置表单</button>
+          </view>
+        </form>
+    </view>
+</view>
+
