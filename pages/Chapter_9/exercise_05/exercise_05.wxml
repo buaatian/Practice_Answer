@@ -1,0 +1,13 @@
+<!--pages/Chapter_9/exercise_05/exercise_05.wxml-->
+<view class="container">
+  <view class="page-head">
+    <view class="page-head-title">canvas组件练习</view>
+    <view class="page-head-line"></view>
+  </view>
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <canvas canvas-id="canvas" class="canvas" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
+    </view>
+  </view>
+</view>
+
