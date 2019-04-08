@@ -1,0 +1,76 @@
+/* pages/Chapter_8/exercise_01/exercise_01.wxss */
+page {
+  background-color: #F8F8F8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+button{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.wrap{
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
+.page-head{
+  padding: 60rpx 50rpx 80rpx;
+  text-align: center;
+}
+.page-head-title{
+  display: inline-block;
+  padding: 0 40rpx 20rpx 40rpx;
+  font-size: 32rpx;
+  color: #BEBEBE;
+}
+.page-head-line{
+  margin: 0 auto;
+  width: 150rpx;
+  height: 2rpx;
+  background-color: #D8D8D8;
+}
+.page-body {
+  width: 100%;
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+.page-section{
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.page-section.center{
+  text-align: center
+}
+.page-section-title{
+  margin-top: 50rpx;
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.page-section-title.origin{
+  margin-top: 10rpx;
+}
+
+.image {
+  height: 300rpx;
+  width: 300rpx;
+  margin: 50rpx 0rpx 0 50rpx;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.page-section-title.top {
+  margin-top: 0;
+}
+

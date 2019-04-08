@@ -1,0 +1,41 @@
+<!--pages/Chapter_8/exercise_03/exercise_03.wxml-->
+<view class="container">
+    <view class="page-head">
+    <view class="page-head-title">camera组件练习</view>
+    <view class="page-head-line"></view>
+  </view>
+
+  <view class="page-body">
+    <view class="page-body-wrapper">
+      <camera
+        mode="scanCode"
+        flash="off"
+        bindscancode="scanCode"
+      >
+      </camera>
+      <form>
+        <view class="page-section">
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">类型</view>
+              </view>
+              <view class="weui-cell__bd">
+                {{ result.type }}
+              </view>
+            </view>
+            <view class="weui-cell weui-cell_input">
+              <view class="weui-cell__hd">
+                <view class="weui-label">结果</view>
+              </view>
+              <view class="weui-cell__bd">
+                {{ result.result }}
+              </view>
+            </view>
+          </view>
+        </view>
+      </form>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,81 @@
+<!--pages/Chapter_8/exercise_01/exercise_01.wxml-->
+<view class="container">
+  <view class="page-head">
+    <view class="page-head-title">image组件练习</view>
+    <view class="page-head-line"></view>
+  </view>
+  <view class="page-body">
+    <view class="page-section center">
+      <view class="page-section-title origin">原图</view>
+      <image src='../../../image/0.jpg'></image>
+    </view>
+    <view class='wrap'>
+      <view class="page-section">
+        <view class="page-section-title">scaleToFill</view>
+        <image class='image' src='../../../image/0.jpg' mode="scaleToFill"></image>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">aspectFit</view>
+        <image class='image' src='../../../image/0.jpg' mode='aspectFit'></image>
+      </view>
+    </view>
+    <view class='wrap'>
+      <view class="page-section">
+        <view class="page-section-title">aspectFill</view>
+        <image class='image' src='../../../image/0.jpg' mode="aspectFill"></image>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">widthFix</view>
+        <image class='image' src='../../../image/0.jpg' mode='widthFix'></image>
+      </view>
+    </view>
+    <view class='wrap'>
+      <view class="page-section">
+        <view class="page-section-title">top</view>
+        <image class='image' src='../../../image/0.jpg' mode="top"></image>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">bottom</view>
+        <image class='image' src='../../../image/0.jpg' mode='bottom'></image>
+      </view>
+    </view>
+    <view class='wrap'>
+      <view class="page-section">
+        <view class="page-section-title">center</view>
+        <image class='image' src='../../../image/0.jpg' mode="center"></image>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">left</view>
+        <image class='image' src='../../../image/0.jpg' mode='left'></image>
+      </view>
+    </view>
+    <view class='wrap'>
+      <view class="page-section">
+        <view class="page-section-title">right</view>
+        <image class='image' src='../../../image/0.jpg' mode="right"></image>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">top left</view>
+        <image class='image' src='../../../image/0.jpg' mode='top left'></image>
+      </view>
+    </view>
+    <view class='wrap'>
+      <view class="page-section">
+        <view class="page-section-title">top right</view>
+        <image class='image' src='../../../image/0.jpg' mode="top right"></image>
+      </view>
+      <view class="page-section">
+        <view class="page-section-title">bottom left</view>
+        <image class='image' src='../../../image/0.jpg' mode="bottom left"></image>
+      </view>
+    </view>
+    <view class='wrap'>
+      <view class="page-section">
+        <view class="page-section-title">bottom right</view>
+        <image class='image' src='../../../image/0.jpg' mode="bottom right"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+
