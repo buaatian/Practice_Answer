@@ -1,0 +1,44 @@
+<!--pages/Chapter_10/exercise_01/exercise_01.wxml-->
+<view class="container">
+  <view class="page-head">
+    <view class="page-head-title">上传和下载文件接口</view>
+    <view class="page-head-line"></view>
+  </view>
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-body-info">
+        <block wx:if="{{imageSrc}}">
+          <image src="{{imageSrc}}" class="image" mode="aspectFit"></image>
+        </block>
+        <block wx:else>
+          <view class="image-plus" bindtap="chooseImage">
+            <view class="image-plus-horizontal"></view>
+            <view class="image-plus-vertical"></view>
+          </view>
+          <view class="image-plus-text">选择图片</view>
+        </block>
+      </view>
+      <progress percent="{{uploadProgress}}" hidden='{{hiddenUploadProgress}}' show-info='true'></progress>
+    </view>
+    <image wx:if="{{imageDownloadSrc}}" src="{{imageDownloadSrc}}" mode="aspectFit" />
+    <block wx:elif="{{showDownloadProgress}}">
+      <view class="page-body-wording">
+        <progress percent="{{downloadProgress}}" show-info='true'></progress>
+      </view>
+      <view class="btn-area">
+        <button bindtap="cancelDownload" type="warn">取消下载</button>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="page-body-wording">
+        <text class="page-body-text">
+          点击按钮下载服务端示例图片
+        </text>
+      </view>
+      <view class="btn-area">
+        <button bindtap="downloadImage" type="primary">下载</button>
+      </view>
+    </block>
+  </view>
+</view>
+
