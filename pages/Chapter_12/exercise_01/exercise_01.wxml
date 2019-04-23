@@ -1,0 +1,39 @@
+<!--pages/Chapter_12/exercise_01/exercise_01.wxml-->
+<view class="container">
+  <view class="page-head">
+    <view class="page-head-title">文件操作练习</view>
+    <view class="page-head-line"></view>
+  </view>
+  <view class="page-body">
+    <block wx:if="{{fileDownloadSrc}}">
+      <view class="page-body-wording">
+        <text class="page-body-text">
+          文件保存成功，大小为：{{fileSize/1024}} KB
+        </text>
+      </view>
+      <view class="btn-area">
+        <button bindtap="openFile">打开文件</button>
+      </view>
+    </block>
+    <block wx:elif="{{showDownloadProgress}}">
+      <view class="page-body-wording">
+        <progress percent="{{downloadProgress}}" show-info='true'></progress>
+      </view>
+      <view class="btn-area">
+        <button bindtap="cancelDownload" type="warn">取消下载</button>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="page-body-wording">
+        <text class="page-body-text">
+          点击按钮下载服务器端示例PDF文档
+        </text>
+      </view>
+      <view class="btn-area">
+        <button bindtap="downloadFile" type="primary">下载</button>
+      </view>
+    </block>
+  </view>
+</view>
+
+

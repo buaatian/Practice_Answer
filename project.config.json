@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 18,
+			"current": 20,
 			"list": [
 				{
 					"id": -1,
@@ -160,6 +160,21 @@
 					"id": -1,
 					"name": "Chapter_10_01",
 					"pathName": "pages/Chapter_10/exercise_01/exercise_01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 19,
+					"name": "Chapter_12_01",
+					"pathName": "pages/Chapter_12/exercise_01/exercise_01",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 20,
+					"name": "Chapter_12_02",
+					"pathName": "pages/Chapter_12/exercise_02/exercise_02",
+					"query": "",
 					"scene": null
 				}
 			]
